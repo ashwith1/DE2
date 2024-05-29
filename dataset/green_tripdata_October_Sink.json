@@ -1,0 +1,21 @@
+{
+	"name": "green_tripdata_October_Sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "green_tripdata_October_Sink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "green_tripdata_2023-10.parquet",
+				"folderPath": "raw data",
+				"fileSystem": "blob-container"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
