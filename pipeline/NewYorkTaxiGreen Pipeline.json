@@ -8,8 +8,11 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
-					"isSequential": false,
-					"batchCount": 0,
+					"items": {
+						"value": "@pipeline().parameters.data2020",
+						"type": "Expression"
+					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "January_2020",
@@ -764,6 +767,11 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.data2021",
+						"type": "Expression"
+					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "January_2021",
@@ -1518,6 +1526,11 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.data2022",
+						"type": "Expression"
+					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "January_2022",
@@ -2272,6 +2285,11 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.data2023",
+						"type": "Expression"
+					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "January_2023",
@@ -3026,6 +3044,11 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.data2024",
+						"type": "Expression"
+					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "January_2024",
@@ -3210,6 +3233,101 @@
 				}
 			}
 		],
+		"parameters": {
+			"YearlyDataSegments": {
+				"type": "Array",
+				"defaultValue": [
+					"January_2020",
+					"February_2020",
+					"March_2020",
+					"April_2020",
+					"May_2020",
+					"June_2020",
+					"July_2020",
+					"August_2020",
+					"September_2020",
+					"October_2020",
+					"November_2020",
+					"December_2020"
+				]
+			},
+			"data2020": {
+				"type": "Array",
+				"defaultValue": [
+					"January_2020",
+					"February_2020",
+					"March_2020",
+					"April_2020",
+					"May_2020",
+					"June_2020",
+					"July_2020",
+					"August_2020",
+					"September_2020",
+					"October_2020",
+					"November_2020",
+					"December_2020"
+				]
+			},
+			"data2021": {
+				"type": "Array",
+				"defaultValue": [
+					"January_2021",
+					"February_2021",
+					"March_2021",
+					"April_2021",
+					"May_2021",
+					"June_2021",
+					"July_2021",
+					"August_2021",
+					"September_2021",
+					"October_2021",
+					"November_2021",
+					"December_2021"
+				]
+			},
+			"data2022": {
+				"type": "Array",
+				"defaultValue": [
+					"January_2022",
+					"February_2022",
+					"March_2022",
+					"April_2022",
+					"May_2022",
+					"June_2022",
+					"July_2022",
+					"August_2022",
+					"September_2022",
+					"October_2022",
+					"November_2022",
+					"December_2022"
+				]
+			},
+			"data2023": {
+				"type": "Array",
+				"defaultValue": [
+					"January_2023",
+					"February_2023",
+					"March_2023",
+					"April_2023",
+					"May_2023",
+					"June_2023",
+					"July_2023",
+					"August_2023",
+					"September_2023",
+					"October_2023",
+					"November_2023",
+					"December_2023"
+				]
+			},
+			"data2024": {
+				"type": "Array",
+				"defaultValue": [
+					"January_2024",
+					"February_2024",
+					"March_2024"
+				]
+			}
+		},
 		"annotations": []
 	}
 }
