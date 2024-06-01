@@ -11,7 +11,7 @@
 			"location": {
 				"type": "HttpServerLocation"
 			},
-			"compressionCodec": "snappy"
+			"compressionCodec": "none"
 		},
 		"schema": []
 	}
