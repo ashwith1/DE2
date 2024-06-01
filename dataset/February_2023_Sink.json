@@ -14,7 +14,7 @@
 				"folderPath": "raw data/2023",
 				"fileSystem": "blob-container"
 			},
-			"compressionCodec": "none"
+			"compressionCodec": "snappy"
 		},
 		"schema": []
 	}
