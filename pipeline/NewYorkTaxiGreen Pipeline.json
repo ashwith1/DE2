@@ -131,7 +131,7 @@
 				"userProperties": []
 			},
 			{
-				"name": "Fail1",
+				"name": "Fail_2020",
 				"type": "Fail",
 				"dependsOn": [
 					{
@@ -141,7 +141,11 @@
 						]
 					}
 				],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"message": "",
+					"errorCode": ""
+				}
 			},
 			{
 				"name": "2021 Web Activity",
@@ -224,7 +228,7 @@
 				"userProperties": []
 			},
 			{
-				"name": "Fail2",
+				"name": "Fail_2021",
 				"type": "Fail",
 				"dependsOn": [
 					{
@@ -234,10 +238,14 @@
 						]
 					}
 				],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"message": "",
+					"errorCode": ""
+				}
 			},
 			{
-				"name": "Fail3",
+				"name": "Fail_2022",
 				"type": "Fail",
 				"dependsOn": [
 					{
@@ -247,10 +255,14 @@
 						]
 					}
 				],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"message": "",
+					"errorCode": ""
+				}
 			},
 			{
-				"name": "Fail4",
+				"name": "Fail_2023",
 				"type": "Fail",
 				"dependsOn": [
 					{
@@ -260,10 +272,14 @@
 						]
 					}
 				],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"message": "",
+					"errorCode": ""
+				}
 			},
 			{
-				"name": "Fail5",
+				"name": "Fail_2024",
 				"type": "Fail",
 				"dependsOn": [
 					{
@@ -273,7 +289,96 @@
 						]
 					}
 				],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"message": "",
+					"errorCode": ""
+				}
+			},
+			{
+				"name": "Error Handling_2020",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Fail_2020",
+						"dependencyConditions": [
+							"Skipped",
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
+			},
+			{
+				"name": "Error Handling_2021",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Fail_2021",
+						"dependencyConditions": [
+							"Skipped",
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
+			},
+			{
+				"name": "Error Handling_2022",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Fail_2022",
+						"dependencyConditions": [
+							"Skipped",
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
+			},
+			{
+				"name": "Error Handling_2023",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Fail_2023",
+						"dependencyConditions": [
+							"Skipped",
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
+			},
+			{
+				"name": "Error Handling_2024",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Fail_2024",
+						"dependencyConditions": [
+							"Skipped",
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
 			}
 		],
 		"annotations": []
