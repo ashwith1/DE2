@@ -1,8 +1,8 @@
 {
-	"name": "February_2023_Sink",
+	"name": "Febuary_2023_Sink1",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "February_2023_Sink",
+			"referenceName": "Febuary_2023_Sink1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
